@@ -4,16 +4,36 @@
     <title>Algorithm Site</title>
 </head>
 <body>
-    <ul id="navigation">
-    {% for item in navigation %}
-        <li><a href="{{ item.href }}">{{ item.caption }}</a></li>
-    {% endfor %}
-    </ul>
+    <header>
+        <nav>
+
+            <ul id="navigation">
+            {% for item in navigation %}
+                <li><a href="{{ item.href }}">{{ item.caption }}</a></li>
+                <li>Home</li>
+                <li>Data Structures</li>
+                <li>Algorithms</li>
+            {% endfor %}
+    </nav>
+        </ul>
+
+    <hr> <!-- horizontal line-->
 
     <h1>Data structures and Algorithms made simple!</h1>
     {{ a_variable }}
 
     {# a comment #}
+</header>
+
+<section>
+    <h2>About</h2>
+    <p>Welcome to Lorem ipsum, this website is used to simplify better illustrate Data structures and Algorithms hope it helps!</p>
+
+</section>
+
+<footer> <!-- DO I WANT ANYTHING HERE?-->
+
+</footer>
 </body>
 <form method="POST">
   <input name="text">
