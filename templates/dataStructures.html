@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <header>
+                <h1>Most Common Data Structures </h1>
+                <nav>
+
+
+                    <div class="left-side">
+                        <ul id="navigation">
+                        {% for item in navigation %}
+                            <li><a href="{{ item.href }}">{{ item.caption }}</a></li>
+                            <li>Home</li>
+                            <li>Data Structures</li>
+                            <li>Algorithms</li>
+                        {% endfor %}
+
+                    </div>
+
+                    <div class="right-side">
+
+                        <form method="POST">
+                            <input name="text">
+                            <input type="submit">
+                        </form>
+
+                    </div>
+
+                </nav>
+                </ul>
+
+        </div>
+
+        <hr> <!-- horizontal line-->
+    </header>
+</body>
+</html>
