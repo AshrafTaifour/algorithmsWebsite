@@ -1,42 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset = 'UTF-8'>
     <title>Algorithm Site</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
+    <div class="container">
+        <div class="nav-wrapper">
+            <header>
+                <nav>
 
-            <ul id="navigation">
-            {% for item in navigation %}
-                <li><a href="{{ item.href }}">{{ item.caption }}</a></li>
-                <li>Home</li>
-                <li>Data Structures</li>
-                <li>Algorithms</li>
-            {% endfor %}
-    </nav>
-        </ul>
 
-    <hr> <!-- horizontal line-->
+                    <div class="left-side">
+                        <ul id="navigation">
+                        {% for item in navigation %}
+                            <li><a href="{{ item.href }}">{{ item.caption }}</a></li>
+                            <li>Home</li>
+                            <li>Data Structures</li>
+                            <li>Algorithms</li>
+                        {% endfor %}
 
-    <h1>Data structures and Algorithms made simple!</h1>
-    {{ a_variable }}
+                    </div>
 
-    {# a comment #}
-</header>
+                    <div class="right-side">
 
-<section>
-    <h2>About</h2>
-    <p>Welcome to Lorem ipsum, this website is used to simplify better illustrate Data structures and Algorithms hope it helps!</p>
+                        <form method="POST">
+                            <input name="text">
+                            <input type="submit">
+                        </form>
 
-</section>
+                    </div>
 
-<footer> <!-- DO I WANT ANYTHING HERE?-->
+                </nav>
+                </ul>
 
-</footer>
+        </div>
+
+        <hr> <!-- horizontal line-->
+
+        <h1>Data structures and Algorithms made simple!</h1>
+        {{ a_variable }}
+
+        {# a comment #}
+    </header>
+
+    <section>
+        <h2>About</h2>
+        <p>Welcome to Lorem ipsum, this website is used to simplify Data structures and Algorithms hope it helps!</p>
+        <!-- can't use < or > as it as a special html keyword/symbol html entity is what we use if we want to use em do so by &# followed by code for the symbol-->
+        <!-- meaningless elements: div (separated), span (inline won't be separated) -->
+
+        <br>
+
+        <p>Q: Why Data structures and Algorithms? </p>
+        <br>
+        <p>A: Well, if you'd like to design or create a particular program, knowing how your data is stored, and what algorthims to use will make your program more efficient. 
+            In addition to that, a lot of interviews for Software Engineering positions are centered around Data structures and algorthims, so it can potentially help you get a job!. 
+        </p>
+
+        <!-- insert the quora algorthim picture-->
+
+    </section>
+
+    <footer> <!-- Link your github and JJAYL's Github on here, in addition to your linkedin?--> 
+
+    </footer>
+</div>
 </body>
-<form method="POST">
-  <input name="text">
-  <input type="submit">
-</form>
+
+
+
 </html>
