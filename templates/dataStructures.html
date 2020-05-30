@@ -6,39 +6,31 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <div class="nav-wrapper">
-            <header>
-                <h1>Most Common Data Structures </h1>
-                <nav>
+	<h1>Most Common Data Structures </h1>
 
 
-                    <div class="left-side">
-                        <ul id="navigation">
-                        {% for item in navigation %}
-                            <li><a href="{{ item.href }}">{{ item.caption }}</a></li>
-                            <li>Home</li>
-                            <li>Data Structures</li>
-                            <li>Algorithms</li>
-                        {% endfor %}
 
-                    </div>
+    <div class="left-side">
+    	<ul id="navigation">
+        	{% for item in navigation %}
+             <li><a href="{{ item.href }}">{{ item.caption }}</a></li>
+             <li>Home</li>
+             <li>Data Structures</li>
+             <li>Algorithms</li>
+             </ul>
+         	{% endfor %}
 
-                    <div class="right-side">
+    </div>
 
-                        <form method="POST">
-                            <input name="text">
-                            <input type="submit">
-                        </form>
+     <div class="right-side">
 
-                    </div>
+        <form method="POST">
+        <input name="text">
+        <input type="submit">
+    </form>
 
-                </nav>
-                </ul>
+    <hr>
 
-        </div>
-
-        <hr> <!-- horizontal line-->
-    </header>
+    
 </body>
 </html>
