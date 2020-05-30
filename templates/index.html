@@ -6,36 +6,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="nav-wrapper">
-            <header>
-                <nav>
+    <div class="left-side">
+    	<ul id="navigation">
+    		{% for item in navigation %}
+            <li><a href="{{ item.href }}">{{ item.caption }}</a></li>
+            <li>Home</li>
+            <li>Data Structures</li>
+            <li>Algorithms</li>
+            {% endfor %}
+    </div>
 
+      <div class="right-side">
 
-                    <div class="left-side">
-                        <ul id="navigation">
-                        {% for item in navigation %}
-                            <li><a href="{{ item.href }}">{{ item.caption }}</a></li>
-                            <li>Home</li>
-                            <li>Data Structures</li>
-                            <li>Algorithms</li>
-                        {% endfor %}
+          <form method="POST">
+              <input name="text">
+              <input type="submit">
+          </form>
 
-                    </div>
-
-                    <div class="right-side">
-
-                        <form method="POST">
-                            <input name="text">
-                            <input type="submit">
-                        </form>
-
-                    </div>
-
-                </nav>
-                </ul>
-
-        </div>
 
         <hr> <!-- horizontal line-->
 
@@ -43,8 +30,8 @@
         {{ a_variable }}
 
         {# a comment #}
-    </header>
 
+    
     <section>
         <h2>About</h2>
         <p>Welcome to Lorem ipsum, this website is used to simplify Data structures and Algorithms hope it helps!</p>
