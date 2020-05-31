@@ -2,45 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet"> 
+    <title>Most Common Algorithms</title>
 </head>
 
 <body>
-    <div class="container">
-        <div class="nav-wrapper">
-            <header>
-                <h1>Most Common Algorithms </h1>
-                <nav>
+	<h1>Most Common Algorithms </h1>
+
+	<div class="navigation">
+    	<ul>
+            <li><a href="index.html"> Home </a></li>
+            <li><a href="dataStructures.html"> Data Structures </a></li>
+            <li><a href="algorithms.html"> Algorithms </a></li>
 
 
-                    <div class="left-side">
-                        <ul id="navigation">
-                        {% for item in navigation %}
-                            <li><a href="{{ item.href }}">{{ item.caption }}</a></li>
-                            <li>Home</li>
-                            <li>Data Structures</li>
-                            <li>Algorithms</li>
-                        {% endfor %}
+          <form id="right-side" method="POST">
+  				<input name="text">
+  				<input type="submit" value="Search">
+          </form>
 
-                    </div>
-
-                    <div class="right-side">
-
-                        <form method="POST">
-                            <input name="text">
-                            <input type="submit">
-                        </form>
-
-                    </div>
-
-                </nav>
-                </ul>
-
-        </div>
+     </div>
 
         <hr> <!-- horizontal line-->
-    </header>
-    
+
+
+
+        <ul class="Alg-elements">
+        	<li>Sort</li>
+        	<li>Search</li>
+        	<li>Dynamic Programming</li>
+        	<li>Recursion </li>
+        	<!-- TODO: think of what else to add -->
+
+        	
+        </ul>
+
+
+
 </body>
 </html>

@@ -4,32 +4,30 @@
     <meta charset = 'UTF-8'>
     <title>Algorithm Site</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    <div class="left-side">
-    	<ul id="navigation">
-    		{% for item in navigation %}
-            <li><a href="{{ item.href }}">{{ item.caption }}</a></li>
-            <li>Home</li>
-            <li>Data Structures</li>
-            <li>Algorithms</li>
-            {% endfor %}
-    </div>
 
-      <div class="right-side">
+    <h1>Data structures and Algorithms made simple!</h1>
 
-          <form method="POST">
-              <input name="text">
-              <input type="submit">
+    <div class="navigation">
+    	<ul>
+            <li><a href="index.html"> Home </a></li>
+            <li><a href="dataStructures.html"> Data Structures </a></li>
+            <li><a href="algorithms.html"> Algorithms </a></li>
+
+
+          <form id="right-side" method="POST">
+  				<input name="text">
+  				<input type="submit" value="Search">
           </form>
 
+     </div>
 
         <hr> <!-- horizontal line-->
 
-        <h1>Data structures and Algorithms made simple!</h1>
-        {{ a_variable }}
 
-        {# a comment #}
+
 
     
     <section>
@@ -53,10 +51,8 @@
     <footer> <!-- Link your github and JJAYL's Github on here, in addition to your linkedin?--> 
 
     </footer>
-</div>
+
 </body>
-<form method="POST">
-  <input name="text">
-  <input type="submit" value="Search">
+
 </form>
 </html>
